@@ -24,6 +24,23 @@ public class HttpbinService {
     public static final String POST_URL = "https://httpbin.org/post";
     public static final String JOKES_URL = "https://official-joke-api.appspot.com/jokes/ten";
 
+
+    // DELETE /customer/<int>
+    // ACCEPT: application/json
+
+    // RequestEntity<Void> req = RequestEntity.delete("/customer/123).build()'
+    // RestTemplate template = new RestTemplate
+    // ResponseEntity<String>resp;
+    // String payload = resp.getBody();
+   /* try{
+        resp = template.exchange(req,String.class);
+        String payload = resp.getBody();
+    } catch (Exception ex){
+        ex.printStackTrace();
+    }*/
+    // return null;
+
+
     public JsonObject getJokes() {
 
         // Configure the request
